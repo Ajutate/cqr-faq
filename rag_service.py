@@ -3,13 +3,13 @@ from typing import List, Dict
 from pathlib import Path
 from dotenv import load_dotenv
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaLLM
-from langchain.chains import RetrievalQA
-from langchain.prompts import PromptTemplate
-from langchain.schema import Document
+from langchain_classic.chains import RetrievalQA
+from langchain_classic.prompts import PromptTemplate
+from langchain_core.documents import Document
 
 from pdf_extractor import extract_pdf
 
